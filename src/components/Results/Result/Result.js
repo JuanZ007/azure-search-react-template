@@ -4,22 +4,12 @@ import './Result.css';
 
 export default function Result(props) {
     return(
-	
-    <div className="individual-results">
-	<label className="tag">
-	//'+tagHtml+
+
 	<a href="http://{`${props.document.location}`}" target="_blank">
-		<h2>
-			{props.document.title}
-		</h2>
-	</a>
-	</label>
-		<p>
-			{props.document.text}
-		//'+readMore((data[i].text).replaceAll("\u00b6", "<br>"),50);+'
-		</p>
-	</div>
+
 	 console.log(props.document);
+	console.log(props.document.text);
+	console.log(props.document.location);
 	
 	//<div className="card result">
     //    <a href={`/details/${props.document.id}`}>
