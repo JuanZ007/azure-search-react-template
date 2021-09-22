@@ -10,7 +10,6 @@ export default function Result(props) {
 	console.log(props.document.text);
 	console.log(props.document.location);
 	
-
     );
 }
 
