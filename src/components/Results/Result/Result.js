@@ -43,7 +43,7 @@ export default function Result(props) {
 	
     return(
 	    	<div>
-	    		<a href={`http://${location}`}><h6 className="title-style">{tagHtml}: {title}</h6></a>
+	    		<label className="tag">{tagHtml}</label>: <a href={`http://${location}`}><h6 className="title-style">{title}</h6></a>
 		 	{elements};
 			<br></br>
 		</div>
