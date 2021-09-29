@@ -14,7 +14,25 @@ export default function Facets(props) {
         if (facetName.includes('metadata_storage_name')) { 
             facetName = 'source';	    	    
         }
-              
+        if (facetName.includes('bizagidevsdoc_site.json')) { 
+            facetName = 'Bizagi Devs';	    	    
+        }
+        if (facetName.includes('tickets_support.json')) { 
+            facetName = 'Tickets';	    	    
+        }
+        if (facetName.includes('documentation_site.json')) { 
+            facetName = 'Technical';	    	    
+        }
+        if (facetName.includes('internalkb_site.json')) { 
+            facetName = 'KB Internal';	    	    
+        }
+        if (facetName.includes('cloud_operations_site.json')) { 
+            facetName = 'Cloud Operations';	    	    
+        }
+        if (facetName.includes('externalkb_site.json')) { 
+            facetName = 'KB External';	    	    
+        }
+        
         
         facetName = capitalizeFirstLetter(facetName);
         facetName = facetName.replace('_', ' ');
