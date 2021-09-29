@@ -40,7 +40,7 @@ export default function CheckboxFacet(props) {
                     checked={isSelected}
                     onClick= {
                         isSelected ? 
-                        () => props.removeFilter({field: props.name, value: facetValue.value}) :
+                        () => props.removeFilter({field: props.name, value: Value}) :
                         () => props.addFilter(props.name, facetValue.value)
                     }
                 />
