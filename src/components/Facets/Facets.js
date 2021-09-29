@@ -33,7 +33,7 @@ export default function Facets(props) {
     var facets;
     try{
         facets = Object.keys(props.facets).map(key => {
-            let facetValue= {props.facets[key]}
+            let facetValue= props.facets[key]
             if (facetValue.includes('bizagidevsdoc_site.json')) { 
                 facetValue = 'Bizagi Devs';	    	    
             }
