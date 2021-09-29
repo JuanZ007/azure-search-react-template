@@ -15,7 +15,7 @@ export default function Result(props) {
 			    const text = words.slice(position, length).join(' ');
 			    position += length;
 			    elements.push((
-			      <Text>{text}</Text>
+			      {text}
 			    ));
 			  }
     return(
