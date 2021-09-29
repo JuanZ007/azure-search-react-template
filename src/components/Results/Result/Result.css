@@ -96,3 +96,9 @@
     opacity: 0.8;
     color: black;
 }
+
+.resultBox {
+    margin-top: 35px;
+    background: #9e9e9e1a;
+    padding: 10px;
+}
