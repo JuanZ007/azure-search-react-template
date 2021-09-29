@@ -3,14 +3,13 @@ import { Text } from 'react-native';
 import './Result.css';
 
 export default function Result(props) {
-    const string = {props.document.text}
-    const length = 50
+    const length = 50;
     return(
 	    	<div>
 	    		<a href={`http://${props.document.location}`}><h6 className="title-style">{props.document.title}</h6></a>
 			
 			// Split text into individual words and count length
-			  const words = string.split(' ');
+			  const words = {props.document.text}.split(' ');
 			  const count = words.length;
 
 			  // Prepare elements and position tracker
