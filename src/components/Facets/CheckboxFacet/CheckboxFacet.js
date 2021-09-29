@@ -12,20 +12,39 @@ export default function CheckboxFacet(props) {
     const checkboxes = props.values.map(facetValue => {
 
         let isSelected = props.selectedFacets.some(facet => facet.value === facetValue.value);
+        let Value = facetValue.value
+        if (Value.includes('bizagidevsdoc_site.json')) { 
+                Value = 'Bizagi Devs';	    	    
+            }
+            if (Value.includes('tickets_support.json')) { 
+                Value = 'Tickets';	    	    
+            }
+            if (Value.includes('documentation_site.json')) { 
+                Value = 'Technical';	    	    
+            }
+            if (Value.includes('internalkb_site.json')) { 
+                Value = 'KB Internal';	    	    
+            }
+            if (Value.includes('cloud_operations_site.json')) { 
+                Value = 'Cloud Operations';	    	    
+            }
+            if (Value.includes('externalkb_site.json')) { 
+                Value = 'KB External';	    	    
+            }
         
         return (
-            <FacetValueListItem dense disableGutters id={facetValue.value}>
+            <FacetValueListItem dense disableGutters id={Value}>
                 <Checkbox 
                     edge="start" 
                     disableRipple 
                     checked={isSelected}
                     onClick= {
                         isSelected ? 
-                        () => props.removeFilter({field: props.name, value: facetValue.value}) :
-                        () => props.addFilter(props.name, facetValue.value)
+                        () => props.removeFilter({field: props.name, value: Value}) :
+                        () => props.addFilter(props.name, Value)
                     }
                 />
-                <ListItemText primary={facetValue.value + " (" + facetValue.count + ")"}/>
+                <ListItemText primary={Value + " (" + facetValue.count + ")"}/>
             </FacetValueListItem>
         );
     });
