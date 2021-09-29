@@ -20,7 +20,7 @@ export default function Result(props) {
 			    ));
 			  }
     if (location.includes('cloudoperations')) { 
-       tagHtml = "Operations";
+       tagHtml = "Cloud Operations";
        cssStyle = "tag1";	    
     }
     if (location.includes('bizagidocumentation')) { 
