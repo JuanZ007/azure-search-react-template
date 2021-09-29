@@ -33,6 +33,26 @@ export default function Facets(props) {
     var facets;
     try{
         facets = Object.keys(props.facets).map(key => {
+            let facetValue= {props.facets[key]}
+            if (facetValue.includes('bizagidevsdoc_site.json')) { 
+                facetValue = 'Bizagi Devs';	    	    
+            }
+            if (facetValue.includes('tickets_support.json')) { 
+                facetValue = 'Tickets';	    	    
+            }
+            if (facetValue.includes('documentation_site.json')) { 
+                facetValue = 'Technical';	    	    
+            }
+            if (facetValue.includes('internalkb_site.json')) { 
+                facetValue = 'KB Internal';	    	    
+            }
+            if (facetValue.includes('cloud_operations_site.json')) { 
+                facetValue = 'Cloud Operations';	    	    
+            }
+            if (facetValue.includes('externalkb_site.json')) { 
+                facetValue = 'KB External';	    	    
+            }
+            
             return <CheckboxFacet 
                 key={key}
                 name={key} 
@@ -48,23 +68,23 @@ export default function Facets(props) {
     }
 
     const filters = props.filters.map((filter, index) => {
-            if (filter.value.includes('bizagidevsdoc_site.json')) { 
-                filter.value = 'Bizagi Devs';	    	    
+            if (filter.field.includes('bizagidevsdoc_site.json')) { 
+                filter.field = 'Bizagi Devs';	    	    
             }
-            if (filter.value.includes('tickets_support.json')) { 
-                filter.value = 'Tickets';	    	    
+            if (filter.field.includes('tickets_support.json')) { 
+                filter.field = 'Tickets';	    	    
             }
-            if (filter.value.includes('documentation_site.json')) { 
-                filter.value = 'Technical';	    	    
+            if (filter.field.includes('documentation_site.json')) { 
+                filter.field = 'Technical';	    	    
             }
-            if (filter.value.includes('internalkb_site.json')) { 
-                filter.value = 'KB Internal';	    	    
+            if (filter.field.includes('internalkb_site.json')) { 
+                filter.field = 'KB Internal';	    	    
             }
-            if (filter.value.includes('cloud_operations_site.json')) { 
-                filter.value = 'Cloud Operations';	    	    
+            if (filter.field.includes('cloud_operations_site.json')) { 
+                filter.field = 'Cloud Operations';	    	    
             }
-            if (filter.value.includes('externalkb_site.json')) { 
-                filter.value = 'KB External';	    	    
+            if (filter.field.includes('externalkb_site.json')) { 
+                filter.field = 'KB External';	    	    
             }
         
             return (
