@@ -5,8 +5,8 @@ import './Result.css';
 export default function Result(props) {
     return(
 	    	<div>
-	    		<h6 className="title-style">{props.document.title}</h6>
-			<a href={`http://${props.document.location}`} >{props.document.text}</a>
+	    		<a href={`http://${props.document.location}`} target="_blank" rel="noopener noreferrer" ><h6 className="title-style">{props.document.title}</h6></a>
+			{props.document.text}
 		</div>
     );
 }
