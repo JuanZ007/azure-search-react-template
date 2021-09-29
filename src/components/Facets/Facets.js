@@ -56,7 +56,7 @@ export default function Facets(props) {
             return <CheckboxFacet 
                 key={key}
                 name={key} 
-                values={props.facets[key]}
+                values={facetValue}
                 addFilter={addFilter}
                 removeFilter={removeFilter}
                 mapFacetName={mapFacetName}
