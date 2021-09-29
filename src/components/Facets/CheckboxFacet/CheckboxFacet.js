@@ -33,15 +33,15 @@ export default function CheckboxFacet(props) {
             }
         
         return (
-            <FacetValueListItem dense disableGutters id={Value}>
+            <FacetValueListItem dense disableGutters id={facetValue.value}>
                 <Checkbox 
                     edge="start" 
                     disableRipple 
                     checked={isSelected}
                     onClick= {
                         isSelected ? 
-                        () => props.removeFilter({field: props.name, value: Value}) :
-                        () => props.addFilter(props.name, Value)
+                        () => props.removeFilter({field: props.name, value: facetValue.value}) :
+                        () => props.addFilter(props.name, facetValue.value)
                     }
                 />
                 <ListItemText primary={Value + " (" + facetValue.count + ")"}/>
