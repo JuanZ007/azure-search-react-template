@@ -28,3 +28,71 @@
     max-height: 12em;
     vertical-align: middle;
 }
+
+.tag{
+    display:flex;
+    align-items: center
+}
+.tag1{
+    font-size: 12px;
+    background: #F9A825;
+    padding: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    opacity: 0.8;
+    color: black;
+}
+
+.tag2{
+    font-size: 12px;
+    background: #2D8631;
+    padding: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    opacity: 0.8;
+    color:black;
+}
+
+.styleticket{
+    font-size: 12px;
+    background: #33FF8D;
+    padding: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    opacity: 0.8;
+    color: black;
+}
+.stylekbinternal{
+    font-size: 12px;
+    background: #338DFF;
+    padding: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    opacity: 0.8;
+    color: black;
+}
+.stylekbexternal{
+    font-size: 12px;
+    background: #8333FF;
+    padding: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    opacity: 0.8;
+    color: black;
+}
+
+.styleBizagiDevs{
+    font-size: 12px;
+    background: #a3c2c2;
+    padding: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    opacity: 0.8;
+    color: black;
+}
