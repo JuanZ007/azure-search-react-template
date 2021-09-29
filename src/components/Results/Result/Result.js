@@ -1,5 +1,4 @@
-import React from 'react';
-import { Text } from 'react-native';
+import React, { Text } from 'react';
 import './Result.css';
 
 export default function Result(props) {
