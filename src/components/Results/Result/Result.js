@@ -4,9 +4,9 @@ import './Result.css';
 
 export default function Result(props) {
     const length = 50; 
-    const location = {props.document.location}
-    const title= {props.document.title}
-    const text = {props.document.text}
+    const location = props.document.location
+    const title= props.document.title
+    const text = props.document.text
     const words = text.split(' ');
     const count = words.length;
     const elements = [];
