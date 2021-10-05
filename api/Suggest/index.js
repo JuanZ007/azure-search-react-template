@@ -13,18 +13,19 @@ const client = new SearchClient(
 
 module.exports = async function (context, req) {
     
-    context.log(req);
+    //context.log(req);
 
     // Reading inputs from HTTP Request
     const q = (req.query.q || (req.body && req.body.q));
-    const top = (req.query.top || (req.body && req.body.top));
+    // Default value of top is 5. The idea is to have 10 suggestions, so it´s x2  
+    const top = (req.query.top || (req.body && req.body.top)) * 2;
     const suggester = (req.query.suggester || (req.body && req.body.suggester));
     
     // Let's get the top 5 suggestions for that search term
     //const suggestions = await client.suggest(q, suggester, {top: parseInt(top)});
-    //const suggestions = await client.autocomplete(q, suggester, {top: parseInt(top)});
+    const suggestions = await client.autocomplete(q, suggester, {top: parseInt(top)});
 
-    context.log(suggester);
+    //context.log(suggestions);
 
     context.res = {
         // status: 200, /* Defaults to 200 */
