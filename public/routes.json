@@ -36,11 +36,7 @@
         "route": "/api/suggest" 
       },
      
-      {
-        "route": "/*",
-        "serve": "/",
-        "statusCode": 200
-      }
+      
     ],
     "platformErrorOverrides": [
       {
