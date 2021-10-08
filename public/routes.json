@@ -27,8 +27,8 @@
       {
         "route": "/home",
         "serve": "/",
-        "statusCode": 301,
-          "allowedRoles": ["Colaborador"]
+        "statusCode": 301
+     
       },
       { 
         "route": "/search" ,
