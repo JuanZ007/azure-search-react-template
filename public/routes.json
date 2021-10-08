@@ -31,19 +31,19 @@
       },
       { 
         "route": "/search" ,
-          "allowedRoles": ["Lector"]
+          "allowedRoles": ["Colaborador"]
       },
       { 
         "route": "/api/search" ,
-          "allowedRoles": ["authenticated"]
+          "allowedRoles": ["Colaborador"]
       },
       { 
         "route": "/api/lookup" ,
-          "allowedRoles": ["authenticated"]
+          "allowedRoles": ["Colaborador"]
       },
       { 
         "route": "/api/suggest", 
-          "allowedRoles": ["authenticated"]
+          "allowedRoles": ["Colaborador"]
       },
     
       {
