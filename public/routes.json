@@ -27,7 +27,8 @@
       {
         "route": "/home",
         "serve": "/",
-        "statusCode": 301
+        "statusCode": 301,
+          "allowedRoles": ["Colaborador"]
       },
       { 
         "route": "/search" ,
@@ -35,15 +36,15 @@
       },
       { 
         "route": "/api/search" ,
-          "allowedRoles": ["Colaborador"]
+        
       },
       { 
         "route": "/api/lookup" ,
-          "allowedRoles": ["Colaborador"]
+
       },
       { 
         "route": "/api/suggest", 
-          "allowedRoles": ["Colaborador"]
+ 
       },
     
       {
