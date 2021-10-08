@@ -21,6 +21,8 @@ export default function Home() {
         <img className="logo" src="/images/cognitive-search.png" alt="Cognitive Search"></img>
         
         <SearchBar postSearchHandler={navigateToSearchPage}></SearchBar>
+
+        <b> Note: You need to sign in to get results</b>
       </div>
     </main>
   );
