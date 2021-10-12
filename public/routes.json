@@ -32,19 +32,19 @@
       },
       { 
         "route": "/search" ,
-          "allowedRoles": ["Colaborador"]
+        "allowedRoles": ["Colaborador"]
       },
       { 
         "route": "/api/search" ,
-        
+        "allowedRoles": ["Colaborador"]
       },
       { 
         "route": "/api/lookup" ,
-
+        "allowedRoles": ["Colaborador"]
       },
       { 
         "route": "/api/suggest", 
- 
+        "allowedRoles": ["Colaborador"]
       },
     
       {
