@@ -31,26 +31,26 @@
       },
       { 
         "route": "/search" ,
-        "allowedRoles": ["authenticated","SupportTeam"]
+        "allowedRoles": ["supportteam"]
       },
       { 
         "route": "/api/search" ,
-        "allowedRoles": ["authenticated","SupportTeam"]
+        "allowedRoles": ["supportteam"]
       },
       { 
         "route": "/api/lookup" ,
-        "allowedRoles": ["authenticated","SupportTeam"]
+        "allowedRoles": ["supportteam"]
       },
       { 
         "route": "/api/suggest", 
-        "allowedRoles": ["authenticated","SupportTeam"]
+        "allowedRoles": ["supportteam"]
       },
     
       {
         "route": "/*",
         "serve": "/",
         "statusCode": 200,
-        "allowedRoles": ["authenticated","SupportTeam"]
+        "allowedRoles": ["supportteam"]
       }
     ],
     "platformErrorOverrides": [
