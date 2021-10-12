@@ -28,30 +28,29 @@
         "route": "/home",
         "serve": "/",
         "statusCode": 301
-     
       },
       { 
         "route": "/search" ,
-        "allowedRoles": ["SupportTeam"]
+        "allowedRoles": ["authenticated","SupportTeam"]
       },
       { 
         "route": "/api/search" ,
-        "allowedRoles": ["SupportTeam"]
+        "allowedRoles": ["authenticated","SupportTeam"]
       },
       { 
         "route": "/api/lookup" ,
-        "allowedRoles": ["SupportTeam"]
+        "allowedRoles": ["authenticated","SupportTeam"]
       },
       { 
         "route": "/api/suggest", 
-        "allowedRoles": ["SupportTeam"]
+        "allowedRoles": ["authenticated","SupportTeam"]
       },
     
       {
         "route": "/*",
         "serve": "/",
         "statusCode": 200,
-        "allowedRoles": ["SupportTeam"]
+        "allowedRoles": ["authenticated","SupportTeam"]
       }
     ],
     "platformErrorOverrides": [
