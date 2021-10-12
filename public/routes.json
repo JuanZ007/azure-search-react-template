@@ -32,26 +32,26 @@
       },
       { 
         "route": "/search" ,
-        "allowedRoles": ["Colaborador"]
+        "allowedRoles": ["SupportTeam"]
       },
       { 
         "route": "/api/search" ,
-        "allowedRoles": ["Colaborador"]
+        "allowedRoles": ["SupportTeam"]
       },
       { 
         "route": "/api/lookup" ,
-        "allowedRoles": ["Colaborador"]
+        "allowedRoles": ["SupportTeam"]
       },
       { 
         "route": "/api/suggest", 
-        "allowedRoles": ["Colaborador"]
+        "allowedRoles": ["SupportTeam"]
       },
     
       {
         "route": "/*",
         "serve": "/",
-        "statusCode": 200
-     
+        "statusCode": 200,
+        "allowedRoles": ["SupportTeam"]
       }
     ],
     "platformErrorOverrides": [
