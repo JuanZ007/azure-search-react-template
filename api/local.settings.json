@@ -3,9 +3,9 @@
   "Values": {
     "AzureWebJobsStorage": "",
     "FUNCTIONS_WORKER_RUNTIME": "node",
-    "SearchApiKey": "B13E54FD98C0B40D276D7BB35E75CB3B",
-    "SearchServiceName": "360supportsearchcognitive-v2",
-    "SearchIndexName": "azureblob-index",
+    "SearchApiKey": "",
+    "SearchServiceName": "",
+    "SearchIndexName": "",
     "SearchFacets": "*"
   }
 }
